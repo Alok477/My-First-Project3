@@ -14,7 +14,7 @@ def load_lottieurl(url):
         return None
     return r.json()
 
-def local_css(file_name):
+def local_css(style):
     with open(style.css) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
